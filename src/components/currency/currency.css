@@ -1,0 +1,38 @@
+.inputCurrency{
+    border: none;
+    outline: none;
+    width: 200px;
+    background-color: white;
+    padding: 8px;
+    height: 30px;
+    border-radius: 5px 0px 0px 5px;
+    text-align: center;
+    
+}
+.container{
+    margin-top: 100px;
+    text-align: center;
+    width: 340px;
+    background-color: white;
+    height: auto;
+    padding: 8px;
+    border: 1px solid #7289da;
+    border-radius: 5px;
+    box-shadow:  rgba(0, 0, 0, 0.2) 0px 10px 16px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
+    
+}
+.selectCurrency{
+    height: 30px;
+    outline: none;
+    border: none;
+    width: 100px ;
+    background-color: #fff7f0;
+    border-radius: 0 5px 5px 0px;
+    text-align: center;
+}
+
+.subContainer{
+    border: 1px solid #7289da;
+    margin: 10px;
+    border-radius: 5px;
+}

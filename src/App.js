@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import {Birthday} from  './components/birthday/birthday'
+import { Currency } from './components/currency/currency';
+import {BrowserRouter as Router,Routes,Route,Link} from "react-router-dom";
+import { useEffect, useState } from 'react';
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<Router>
+   <div className="navbarCustom">
+     <Link className="navbarLinks" to="/">Currency</Link>
+     <Link className="navbarLinks" to="/birthday">Birthday</Link>
+   </div>
+   <Routes>
+    <Route path="/" element={<Currency/>} />
+    <Route path="/birthday" element={<Birthday/>} />
+   </Routes>
+ </Router>
   );
 }
 
